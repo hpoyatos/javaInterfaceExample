@@ -1,7 +1,7 @@
 public interface UmMonteDeNumero {
     //"Contrato", uma promessa, uma ESPECIFICAÇÃO..
 
-    // Método para inserir um número NOVO....
+    // Método para inserir um número NOVO....no final do "trem"
     public void inserir(int n);
 
     // Método para buscar um número (verificar se ele existe)
