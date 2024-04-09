@@ -12,8 +12,21 @@ public class App {
 
         System.out.println(meuVetor.numero(0));
 
-        System.out.println(meuVetor.numero(11));
+        //System.out.println(meuVetor.numero(11));
 
+        System.out.println("");
+        System.out.println("");
+        // Usando a estrutura ArrayLista...
 
+        ArrayLista minhaLista = new ArrayLista();
+        System.out.println(minhaLista.tamanho());
+        
+        minhaLista.inserir(20);
+        minhaLista.inserir(56);
+
+        System.out.println(minhaLista.buscar(56));
+        System.out.println(minhaLista.buscar(22));
+
+        System.out.println(minhaLista.numero(0));
     }
 }

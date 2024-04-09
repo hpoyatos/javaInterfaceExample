@@ -2,7 +2,7 @@ public interface UmMonteDeNumero {
     //"Contrato", uma promessa, uma ESPECIFICAÇÃO..
 
     // Método para inserir um número NOVO....no final do "trem"
-    public void inserir(int n);
+    public boolean inserir(int n);
 
     // Método para buscar um número (verificar se ele existe)
     public int buscar(int n);
@@ -16,4 +16,7 @@ public interface UmMonteDeNumero {
 
     // Método que eu passo um "índice" e ele me devolve o número guardado no "trem"
     public int numero(int index);
+
+    // Método que imprime os elementos da estrutura (do "trem")
+    public void imprimir();
 }

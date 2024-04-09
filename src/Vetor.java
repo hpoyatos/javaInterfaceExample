@@ -1,7 +1,7 @@
 public class Vetor implements UmMonteDeNumero {
     // Já que a classe chama "Vetor" vamos usar..um vetor para resolver
-    int vetor[];
-    int indiceDaVez;
+    private int vetor[];
+    private int indiceDaVez;
 
     // Construtor vai receber o tamanho do vetor e implementar com o tamanho pedido..
     public Vetor(int tamanho) {
@@ -25,9 +25,14 @@ public class Vetor implements UmMonteDeNumero {
     }
 
     @Override
-    public void inserir(int n) {
-        this.vetor[this.indiceDaVez] = n;
-        this.indiceDaVez++;
+    public boolean inserir(int n) {
+        if (this.indiceDaVez < this.vetor.length){
+            this.vetor[this.indiceDaVez] = n;
+            this.indiceDaVez++;
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
@@ -54,7 +59,21 @@ public class Vetor implements UmMonteDeNumero {
 
     @Override
     public int tamanho() {
+        return this.indiceDaVez;
+    }
+
+    public int tamanhoReal() {
         return this.vetor.length;
     }
+
+    @Override
+    public void imprimir() {
+        System.out.println("Imprimindo os elementos");
+        for(int numero: vetor){
+            System.out.println(numero);
+        }
+    }
+
+    
 
 }
