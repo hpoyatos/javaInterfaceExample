@@ -6,12 +6,14 @@ public class App {
 
         meuVetor.inserir(20);
         meuVetor.inserir(56);
+        System.out.println(meuVetor.tamanho());
 
         System.out.println(meuVetor.buscar(56));
         System.out.println(meuVetor.buscar(22));
 
         System.out.println(meuVetor.numero(0));
 
+        meuVetor.imprimir();
         //System.out.println(meuVetor.numero(11));
 
         System.out.println("");
@@ -23,10 +25,13 @@ public class App {
         
         minhaLista.inserir(20);
         minhaLista.inserir(56);
+        System.out.println(minhaLista.tamanho());
 
         System.out.println(minhaLista.buscar(56));
         System.out.println(minhaLista.buscar(22));
 
         System.out.println(minhaLista.numero(0));
+
+        minhaLista.imprimir();
     }
 }

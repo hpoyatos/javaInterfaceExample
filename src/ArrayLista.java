@@ -15,8 +15,8 @@ public class ArrayLista implements UmMonteDeNumero {
     }
 
     @Override
-    public void inserir(int n) {
-        lista.add(n);
+    public boolean inserir(int n) {
+        return lista.add(n);
     }
 
     @Override
@@ -34,4 +34,11 @@ public class ArrayLista implements UmMonteDeNumero {
         return lista.size();
     }
 
+    @Override
+    public void imprimir() {
+        System.out.println("Imprimindo os elementos");
+        for(int numero: this.lista){
+            System.out.println(numero);
+        }
+    }    
 }

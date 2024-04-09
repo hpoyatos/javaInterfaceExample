@@ -69,8 +69,8 @@ public class Vetor implements UmMonteDeNumero {
     @Override
     public void imprimir() {
         System.out.println("Imprimindo os elementos");
-        for(int numero: vetor){
-            System.out.println(numero);
+        for(int i=0; i<this.tamanho(); i++){
+            System.out.println(this.vetor[i]);
         }
     }
 
